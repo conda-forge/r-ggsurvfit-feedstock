@@ -1,11 +1,11 @@
-About r-ggsurvfit
-=================
+About r-ggsurvfit-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggsurvfit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.danieldsjoberg.com/ggsurvfit/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggsurvfit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ease the creation of time-to-event (i.e. survival) endpoint figures. The modular functions create figures ready for publication. Each of the functions that add to or modify the figure are written as proper 'ggplot2' geoms or stat methods, allowing the functions from this package to be combined with any function or customization from 'ggplot2' and other 'ggplot2' extension packages.
 
