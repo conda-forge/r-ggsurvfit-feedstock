@@ -1,4 +1,4 @@
-{% set version = '0.2.1' %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggsurvfit_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggsurvfit/ggsurvfit_{{ version }}.tar.gz
-  sha256: 939acc42daa8e747eacf06bdd9e48a55ccafdfaf8b24bc24d6eb44d5345a2f08
+  sha256: 1c9ca39fe596d6696de25405c104b4e4f24a7132c16b23b6ee4cfb1837892e01
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -59,14 +59,11 @@ about:
   dev_url: https://github.com/ddsjoberg/ggsurvfit
   doc_url: https://www.danieldsjoberg.com/ggsurvfit/reference/index.html
   license: MIT
-  summary: Ease the creation of time-to-event (i.e. survival) endpoint figures. The modular functions
-    create figures ready for publication. Each of the functions that add to or modify
-    the figure are written as proper 'ggplot2' geoms or stat methods, allowing the functions
-    from this package to be combined with any function or customization from 'ggplot2'
-    and other 'ggplot2' extension packages.
+  summary: Ease the creation of time-to-event (i.e. survival) endpoint figures. The modular functions create figures ready for publication. Each of the functions that add to or modify the figure are written as proper 'ggplot2' geoms or stat methods, allowing the functions from this package to be combined with any function
+    or customization from 'ggplot2' and other 'ggplot2' extension packages.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
