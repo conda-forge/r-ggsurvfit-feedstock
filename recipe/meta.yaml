@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggsurvfit_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggsurvfit/ggsurvfit_{{ version }}.tar.gz
-  sha256: 236a542d7b7768fa55e49cc6d0c8c812c7ef149a9bafb0850ffb27f23cbd67bd
+  sha256: 25670e2b7eeb1f61a2b7e8f76a48d5066e7afa4240773b6ec4cd8e185fda7830
 
 build:
   merge_build_host: true  # [win]
