@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggsurvfit_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggsurvfit/ggsurvfit_{{ version }}.tar.gz
-  sha256: 25670e2b7eeb1f61a2b7e8f76a48d5066e7afa4240773b6ec4cd8e185fda7830
+  sha256: 99d2381eab75699450d6fe2fe134ce33f581bb87b4e6bb58ce375b8d0d9d2e36
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
